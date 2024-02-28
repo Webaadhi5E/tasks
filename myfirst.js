@@ -9,6 +9,20 @@ let secondElement = document.createElement("h1");
 secondElement.innerHTML = `${firstName}${lastName}`;
 firstElement.appendChild(secondElement);
 
+let switchPage = document.createElement('div');
+switchPage.style.display = 'flex';
+firstElement.appendChild(switchPage);
+
+let routeButton = document.createElement('button');
+routeButton.classList.add('btn', 'btn-primary');
+routeButton.innerHTML = "Switch-Page";
+routeButton.addEventListener('click', changePage);
+switchPage.appendChild(routeButton);
+
+function changePage() {
+  window.location.href = "sign-up.html";
+}
+
 let largestNumber = [24, 88, 99, 11, 55, 66, 21, 1, 15, 12, 13];
 let newNumber = largestNumber.map((item) => item * 2);
 // console.log(newNumber);
@@ -90,3 +104,17 @@ for (let i = 0; i < largeNumbers.length; i++) {
 console.log(numberbelow);
 console.log(numberabove);
 
+let p = new Promise((resolve, reject) => {
+  let a = 1 + 3;
+  if (a === 2) {
+    resolve("Success");
+  } else {
+    reject("Failed");
+  }
+});
+
+p.then((message) => {
+  console.log("This is the New Message" + message);
+}).catch((message) => {
+  console.log("This is the Wrong Message" + message);
+});
