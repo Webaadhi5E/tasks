@@ -53,39 +53,6 @@ function reversel(str) {
   }
   return output;
 }
-console.log(reversel(largestNumber));
-
-// function printDate() {
-//   let date = new Date();
-//   let hh = date.getHours();
-//   let min = date.getMinutes();
-//   let sec = date.getSeconds();
-//   let session = "AM";
-
-//   if (hh === 0) {
-//     hh = 12;
-//   } else if (hh > 12) {
-//     hh = hh - 12;
-//     session = "PM";
-//   }
-
-//   hh = hh < 10 ? "0" + hh : hh;
-//   min = min < 10 ? "0" + min : min;
-//   sec = sec < 10 ? "0" + sec : sec;
-//   let time = hh + ":" + min + ":" + sec + " " + session;
-//   let timeElement = document.createElement("div");
-//   timeElement.classList.add("clock");
-//   timeElement.innerText = time;
-//   timeElement.textContent = time;
-
-//   setTimeout(function () {
-//     printDate();
-//   }, 1000);
-//   firstElement.appendChild(timeElement);
-//   //   console.log(time,t);
-// }
-
-// printDate();
 
 let largeNumbers = [10, 32, 47, 1, 25, 4, 99, 22, 14, 30];
 let numberbelow = [];
