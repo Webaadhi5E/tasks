@@ -9,3 +9,9 @@
   border: 2px solid #d9d9d9;
   overflow: auto;
 }
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
